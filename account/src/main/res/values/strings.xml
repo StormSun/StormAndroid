@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Account</string>
+    <string
+        name="ACCOUNT_TYPE"
+        >com.stormsun.app.account</string>
+	<string
+        name="ACCOUNT_LABEL"
+        >Canofsleep Account</string>
+</resources>

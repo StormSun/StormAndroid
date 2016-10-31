@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.stormsun.app.customview.MainActivity"
+    >
+
+    <Button
+        android:id="@+id/id_btn_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="画圆（2.6作业1）"
+        />
+
+    <Button
+        android:id="@+id/id_btn_verify_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="验证码（2.6作业2）"
+        />
+</LinearLayout>

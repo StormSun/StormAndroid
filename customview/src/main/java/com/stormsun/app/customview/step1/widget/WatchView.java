@@ -5,6 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 import java.util.Calendar;
@@ -17,6 +18,7 @@ public class WatchView extends View {
 
     private Paint mPaint;
     private Calendar mCalender;
+    private static final String TAG = WatchView.class.getSimpleName();
 
     public WatchView(Context context) {
         super(context);
@@ -94,17 +96,49 @@ public class WatchView extends View {
      */
     private void drawPoints(Canvas canvas, int r) {
         mCalender.setTimeInMillis(System.currentTimeMillis());
-        int hour = mCalender.get(Calendar.HOUR) % 12;
-        int minute = mCalender.get(Calendar.MINUTE);
-        int second = mCalender.get(Calendar.SECOND);
+        int hours = mCalender.get(Calendar.HOUR) % 12;
+        int minutes = mCalender.get(Calendar.MINUTE);
+        int seconds = mCalender.get(Calendar.SECOND);
+
+        Log.d(TAG, hours + " : " + minutes +" : " + seconds);
 
         // 画时针
-
+        int degree = 360 / 12 * hours;
+        double radians = Math.toRadians(degree);
+        int startX = r;
+        int startY = r;
+        int endX = (int)(startX + Math.cos(radians) * r * 0.5);
+        int endY = (int)(startY + Math.sin(radians) * r * 0.5);
+        canvas.save();
+        canvas.rotate(-90, r, r);
+        canvas.drawLine(startX, startY, endX, endY, mPaint);
+        canvas.restore();
 
         // 画分针
-
+        degree = 360 / 60 * minutes;
+        radians = Math.toRadians(degree);
+        endX = (int)(startX + Math.cos(radians) * r * 0.6);
+        endY = (int)(startY + Math.sin(radians) * r * 0.6);
+        canvas.save();
+        canvas.rotate(-90, r, r);
+        canvas.drawLine(startX, startY, endX, endY, mPaint);
+        canvas.restore();
 
         // 画秒针
+        degree = 360 / 60 * seconds;
+        radians = Math.toRadians(degree);
+        endX = (int)(startX + Math.cos(radians) * r * 0.8);
+        endY = (int)(startY + Math.sin(radians) * r * 0.8);
+        canvas.save();
+        canvas.rotate(-90, r, r);
+        canvas.drawLine(startX, startY, endX, endY, mPaint);
+
+        // 尾巴
+        radians = Math.toRadians(degree - 180);
+        endX = (int) (startX + r * 0.15 * Math.cos(radians));
+        endY = (int) (startY + r * 0.15 * Math.sin(radians));
+        canvas.drawLine(startX, startY, endX, endY, mPaint);
+        canvas.restore();
 
 
     }

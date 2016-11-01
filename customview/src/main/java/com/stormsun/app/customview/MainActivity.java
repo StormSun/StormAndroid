@@ -10,6 +10,7 @@ import com.stormsun.app.customview.step1.ClipActivity;
 import com.stormsun.app.customview.step1.Coordinate2Activity;
 import com.stormsun.app.customview.step1.CoordinateActivity;
 import com.stormsun.app.customview.step1.VerificationCodeActivity;
+import com.stormsun.app.customview.step1.WatchActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -53,4 +54,10 @@ public class MainActivity extends AppCompatActivity {
     void openClip(){
         startActivity(new Intent(this, ClipActivity.class));
     }
+
+    @OnClick(R.id.id_btn_watch)
+    void openWatch(){
+        startActivity(new Intent(this, WatchActivity.class));
+    }
+
 }

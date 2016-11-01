@@ -33,22 +33,32 @@
         android:layout_height="wrap_content"
         android:text="滚动球"
         />
+
     <Button
         android:id="@+id/id_btn_coordinate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="坐标转换"
         />
+
     <Button
         android:id="@+id/id_btn_coordinate2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="坐标转换(Matrix)"
         />
+
     <Button
         android:id="@+id/id_btn_clip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="精灵图(裁剪)"
+        />
+
+    <Button
+        android:id="@+id/id_btn_watch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="时钟"
         />
 </LinearLayout>

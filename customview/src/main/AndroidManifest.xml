@@ -21,6 +21,7 @@
         <activity android:name=".step1.CoordinateActivity" />
         <activity android:name=".step1.Coordinate2Activity" />
         <activity android:name=".step1.ClipActivity" />
+        <activity android:name=".step1.WatchActivity" />
     </application>
 
 </manifest>

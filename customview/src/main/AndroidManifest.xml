@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".step1.CircleDemoActivity" />
         <activity android:name=".step1.VerificationCodeActivity" />
+        <activity android:name=".step1.BallMoveActivity" />
     </application>
 
 </manifest>

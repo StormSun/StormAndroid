@@ -26,4 +26,11 @@
         android:layout_height="wrap_content"
         android:text="验证码（2.6作业2）"
         />
+
+    <Button
+        android:id="@+id/id_btn_ball_move"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="滚动球"
+        />
 </LinearLayout>

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.stormsun.app.customview.step1.BallMoveActivity;
 import com.stormsun.app.customview.step1.CircleDemoActivity;
 import com.stormsun.app.customview.step1.VerificationCodeActivity;
 
@@ -26,7 +27,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick(R.id.id_btn_verify_code)
-    void openVerfyCode(){
+    void openVerifyCode(){
         startActivity(new Intent(this, VerificationCodeActivity.class));
+    }
+
+    @OnClick(R.id.id_btn_ball_move)
+    void openBallMove(){
+        startActivity(new Intent(this, BallMoveActivity.class));
     }
 }

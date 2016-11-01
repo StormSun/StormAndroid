@@ -45,4 +45,10 @@
         android:layout_height="wrap_content"
         android:text="坐标转换(Matrix)"
         />
+    <Button
+        android:id="@+id/id_btn_clip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="精灵图(裁剪)"
+        />
 </LinearLayout>

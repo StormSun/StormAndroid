@@ -6,6 +6,8 @@ import android.os.Bundle;
 
 import com.stormsun.app.customview.step1.BallMoveActivity;
 import com.stormsun.app.customview.step1.CircleDemoActivity;
+import com.stormsun.app.customview.step1.Coordinate2Activity;
+import com.stormsun.app.customview.step1.CoordinateActivity;
 import com.stormsun.app.customview.step1.VerificationCodeActivity;
 
 import butterknife.ButterKnife;
@@ -34,5 +36,15 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.id_btn_ball_move)
     void openBallMove(){
         startActivity(new Intent(this, BallMoveActivity.class));
+    }
+
+    @OnClick(R.id.id_btn_coordinate)
+    void openCoordinate(){
+        startActivity(new Intent(this, CoordinateActivity.class));
+    }
+
+    @OnClick(R.id.id_btn_coordinate2)
+    void openCoordinate2(){
+        startActivity(new Intent(this, Coordinate2Activity.class));
     }
 }

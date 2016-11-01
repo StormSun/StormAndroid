@@ -55,9 +55,11 @@ public class ClipView extends View {
         int width = bmpJingling.getWidth();
         int height = bmpJingling.getHeight();
         int w = width / COUNT;
+        canvas.save();
         canvas.clipRect(0, 0, w, height, Region.Op.INTERSECT);
         canvas.translate(-index * w, 0);
         canvas.drawBitmap(bmpJingling, 0, 0, null);
+        canvas.restore();
         if (isAuto) {
             index++;
             if (index >= COUNT) {

@@ -15,13 +15,16 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".step1.CircleDemoActivity" />
-        <activity android:name=".step1.VerificationCodeActivity" />
-        <activity android:name=".step1.BallMoveActivity" />
-        <activity android:name=".step1.CoordinateActivity" />
-        <activity android:name=".step1.Coordinate2Activity" />
-        <activity android:name=".step1.ClipActivity" />
-        <activity android:name=".step1.WatchActivity" />
+        <activity android:name=".step1.activity.CircleDemoActivity" />
+        <activity android:name=".step1.activity.VerificationCodeActivity" />
+        <activity android:name=".step1.activity.BallMoveActivity" />
+        <activity android:name=".step1.activity.CoordinateActivity" />
+        <activity android:name=".step1.activity.Coordinate2Activity" />
+        <activity android:name=".step1.activity.ClipActivity" />
+        <activity android:name=".step1.activity.WatchActivity" />
+        <activity android:name=".step1.activity.Line1Activity" />
+        <activity android:name=".step1.activity.Line2Activity" />
+        <activity android:name=".step1.activity.Rect1Activity" />
     </application>
 
 </manifest>

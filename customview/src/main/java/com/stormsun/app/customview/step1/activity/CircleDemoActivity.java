@@ -1,4 +1,4 @@
-package com.stormsun.app.customview.step1;
+package com.stormsun.app.customview.step1.activity;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

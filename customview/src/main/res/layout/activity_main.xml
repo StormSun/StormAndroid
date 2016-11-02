@@ -61,4 +61,24 @@
         android:layout_height="wrap_content"
         android:text="时钟"
         />
+
+    <Button
+        android:id="@+id/id_btn_line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跟随手指画线"
+        />
+    <Button
+        android:id="@+id/id_btn_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跟随手指画线2"
+        />
+
+    <Button
+        android:id="@+id/id_btn_rect1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="画矩形"
+        />
 </LinearLayout>

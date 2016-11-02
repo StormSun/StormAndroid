@@ -4,13 +4,16 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.stormsun.app.customview.step1.BallMoveActivity;
-import com.stormsun.app.customview.step1.CircleDemoActivity;
-import com.stormsun.app.customview.step1.ClipActivity;
-import com.stormsun.app.customview.step1.Coordinate2Activity;
-import com.stormsun.app.customview.step1.CoordinateActivity;
-import com.stormsun.app.customview.step1.VerificationCodeActivity;
-import com.stormsun.app.customview.step1.WatchActivity;
+import com.stormsun.app.customview.step1.activity.BallMoveActivity;
+import com.stormsun.app.customview.step1.activity.CircleDemoActivity;
+import com.stormsun.app.customview.step1.activity.ClipActivity;
+import com.stormsun.app.customview.step1.activity.Coordinate2Activity;
+import com.stormsun.app.customview.step1.activity.CoordinateActivity;
+import com.stormsun.app.customview.step1.activity.Line1Activity;
+import com.stormsun.app.customview.step1.activity.Line2Activity;
+import com.stormsun.app.customview.step1.activity.Rect1Activity;
+import com.stormsun.app.customview.step1.activity.VerificationCodeActivity;
+import com.stormsun.app.customview.step1.activity.WatchActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -58,6 +61,21 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.id_btn_watch)
     void openWatch(){
         startActivity(new Intent(this, WatchActivity.class));
+    }
+
+    @OnClick(R.id.id_btn_line1)
+    void openLine1(){
+        startActivity(new Intent(this, Line1Activity.class));
+    }
+
+    @OnClick(R.id.id_btn_line2)
+    void openLine2(){
+        startActivity(new Intent(this, Line2Activity.class));
+    }
+
+    @OnClick(R.id.id_btn_rect1)
+    void openRect1(){
+        startActivity(new Intent(this, Rect1Activity.class));
     }
 
 }

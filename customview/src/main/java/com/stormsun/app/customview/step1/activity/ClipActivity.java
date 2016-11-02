@@ -1,4 +1,4 @@
-package com.stormsun.app.customview.step1;
+package com.stormsun.app.customview.step1.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

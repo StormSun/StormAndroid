@@ -26,6 +26,8 @@
         <activity android:name=".step1.activity.Line1Activity" />
         <activity android:name=".step1.activity.Line2Activity" />
         <activity android:name=".step1.activity.Rect1Activity" />
+        <activity android:name=".step1.laowang.RulesActivity" />
+        <activity android:name=".step1.imageeditor.ImageEditorActivity" />
     </application>
 
 </manifest>

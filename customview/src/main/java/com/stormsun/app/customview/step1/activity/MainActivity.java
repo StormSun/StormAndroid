@@ -15,6 +15,8 @@ import com.stormsun.app.customview.step1.activity.Line2Activity;
 import com.stormsun.app.customview.step1.activity.Rect1Activity;
 import com.stormsun.app.customview.step1.activity.VerificationCodeActivity;
 import com.stormsun.app.customview.step1.activity.WatchActivity;
+import com.stormsun.app.customview.step1.imageeditor.ImageEditorActivity;
+import com.stormsun.app.customview.step1.laowang.RulesActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -78,5 +80,41 @@ public class MainActivity extends AppCompatActivity {
     void openRect1(){
         startActivity(new Intent(this, Rect1Activity.class));
     }
+
+    @OnClick(R.id.id_btn_image_editor)
+    void openImageEditor(){
+        startActivity(new Intent(this, ImageEditorActivity.class));
+    }
+
+    @OnClick(R.id.id_btn_rules)
+    void openRules(){
+        startActivity(new Intent(this, RulesActivity.class));
+    }
+
+    /**
+     *
+     * @param len  长度  13cm
+     */
+    private void sss(int len){
+        // 前边特殊处理
+
+
+        // 开始后边循环
+        for (int i = 1; i <= len; i++) {
+            for (int j = 1; j <= 8; j++) {
+                if(j == 5){
+                    // 中
+
+                } else if(j == 8){
+                    // 长
+
+                } else {
+                    // 短
+
+                }
+            }
+        }
+    }
+
 
 }

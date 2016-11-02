@@ -1,1 +1,1 @@
-include ':app', ':account', ':customview'
+include ':app', ':account', ':customview', ':laowang'

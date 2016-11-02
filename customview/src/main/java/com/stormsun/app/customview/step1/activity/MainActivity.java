@@ -1,9 +1,10 @@
-package com.stormsun.app.customview;
+package com.stormsun.app.customview.step1.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.stormsun.app.customview.R;
 import com.stormsun.app.customview.step1.activity.BallMoveActivity;
 import com.stormsun.app.customview.step1.activity.CircleDemoActivity;
 import com.stormsun.app.customview.step1.activity.ClipActivity;
